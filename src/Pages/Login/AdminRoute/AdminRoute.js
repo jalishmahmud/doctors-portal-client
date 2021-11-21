@@ -1,5 +1,4 @@
 import { CircularProgress } from "@mui/material";
-import is from "date-fns/esm/locale/is/index.js";
 import React from "react";
 import { Redirect, Route } from "react-router";
 import useAuth from "../../../hooks/useAuth";
