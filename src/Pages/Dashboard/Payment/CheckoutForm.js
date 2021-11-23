@@ -15,7 +15,7 @@ const CheckoutForm = ({ appointment }) => {
   const { user } = useAuth();
 
   useEffect(() => {
-    fetch("http://localhost:5000/create-payment-intent", {
+    fetch("https://salty-mountain-67320.herokuapp.com/create-payment-intent", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -78,7 +78,7 @@ const CheckoutForm = ({ appointment }) => {
         ),
       };
       console.log(payment);
-      const url = `http://localhost:5000/appointments/${_id}`;
+      const url = `https://salty-mountain-67320.herokuapp.com/appointments/${_id}`;
       fetch(url, {
         method: "PUT",
         headers: {
